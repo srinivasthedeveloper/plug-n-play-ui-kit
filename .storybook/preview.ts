@@ -1,21 +1,18 @@
 import { withThemeFromJSXProvider } from '@storybook/addon-themes';
-import { createGlobalStyle } from 'styled-components';
+import { ThemeProvider } from 'styled-components';
 
-const GlobalStyles = createGlobalStyle`
-  body {
-    margin: 0px;
-    padding: 0px;
-  }
-`;
+import GlobalStyles from '../src/styles/global-styles';
+import lightTheme from '../src/styles/themes/light-theme';
+import darkTheme from '../src/styles/themes/dark-theme';
 
 export const decorators = [
   withThemeFromJSXProvider({
-    // themes: {
-    //   light: lightTheme,
-    //   dark: darkTheme,
-    // },
-    // defaultTheme: 'light',
-    // Provider: ThemeProvider,
+    themes: {
+      light: lightTheme,
+      dark: darkTheme,
+    },
+    defaultTheme: 'light',
+    Provider: ThemeProvider,
     GlobalStyles, // Adds your GlobalStyle component to all stories
   }),
 ];
