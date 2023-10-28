@@ -11,14 +11,20 @@ const lightTheme = {
   border:{
     normal: "1px solid #000",
   },
+  boxShadow: {
+    normal: "0px 6px 8px #0002",
+  },
   typography: {
     ...commonTheme.typography,
   },
   padding: {
     ...commonTheme.padding,
   },
-  boxShadow: {
-    normal: "0px 6px 8px #0002",
+  layout:{
+    ...commonTheme.layout
+  },
+  gap:{
+    ...commonTheme.gap
   }
 };
 

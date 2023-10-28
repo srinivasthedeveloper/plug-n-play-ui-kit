@@ -19,12 +19,24 @@ const commonTheme = {
       overline: "overline",
       lineThrough: "line-through",
       underline: "underline",
-    }
+    },
   },
   padding: {
     small: "4px 16px",
     medium: "8px 32px",
     large: "16px 64px",
+  },
+  layout: {
+    flexCenter: {
+      display: "flex",
+      alignItems: "center",
+      justifyContent: "center",
+    },
+  },
+  gap: {
+    small: "4px",
+    medium: "8px",
+    large: "16px",
   },
 };
 

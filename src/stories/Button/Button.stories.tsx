@@ -1,7 +1,6 @@
 import { Meta } from "@storybook/react";
 import { useRef } from "react";
-import { Button } from "../../components/Button";
-import { ButtonProps } from "../../components/Button/types";
+import { Button, ButtonProps } from "../../components/Button";
 
 const meta: Meta<typeof Button> = {
   title: "Components/Button",
@@ -71,6 +70,14 @@ SmallLinkNormal.args = {
   label: "Small Link Normal Button",
 };
 
+const PrimaryIconButton = Default.bind({});
+PrimaryIconButton.args = {
+  shape: "oval",
+  label: "PrimaryIconButton",
+  leftIcon: <span>+</span>,
+  rightIcon: <span>-</span>,
+} as any;
+
 const ButtonWithRef: any = (args: ButtonProps) => {
   const buttonRef = useRef<HTMLButtonElement>(null);
   const label = args.label ?? "Button With Ref";
@@ -83,6 +90,9 @@ const ButtonWithRef: any = (args: ButtonProps) => {
         ref={buttonRef}
         shape="oval"
         onClick={() => console.log("Button With Ref Clicked")}
+        onFocus={() => console.log("Button With Ref Focused")}
+        onBlur={() => console.log("Button With Ref Blurred")}
+        onDoubleClick={() => console.log("Button With Ref Double Clicked")}
         {...args}
         label={label}
       />
@@ -103,6 +113,7 @@ export {
   MediumSecondaryOval,
   LargeTextBoldItalic,
   SmallLinkNormal,
+  PrimaryIconButton,
   ButtonWithRef,
   meta as default,
 };

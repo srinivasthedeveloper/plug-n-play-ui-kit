@@ -9,7 +9,9 @@ type ButtonStyleProps = {
 }
 
 type ButtonProps = ButtonStyleProps & React.ButtonHTMLAttributes<HTMLButtonElement> & {
-    label: string;
+    label: string | React.ReactNode;
+    leftIcon?: React.ReactNode;
+    rightIcon?: React.ReactNode;
     onClick?: () => void;
     ref?: React.RefObject<HTMLButtonElement> | null;
 }

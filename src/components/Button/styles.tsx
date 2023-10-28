@@ -5,6 +5,8 @@ const SButton = styled.button<ButtonStyleProps>`
   cursor: pointer;
   text-align: center;
   border: none;
+  ${({ theme }) => theme.layout.flexCenter};
+  gap: ${({ size = "medium", theme }) => theme.gap[size]};
   font-weight: ${({ theme, fontWeight = "normal" }) =>
     theme.typography.weight[fontWeight]};
   font-size: ${({ theme, fontSize, size = "medium" }) =>
@@ -55,12 +57,16 @@ const SButton = styled.button<ButtonStyleProps>`
 
   &:active {
     transform: scale(0.95);
+    &:focus {
+      outline-color: transparent;
+    }
   }
 
   &:disabled {
     filter: grayscale(1);
     cursor: not-allowed;
-    opacity: 0.8;
+    opacity: 0.6;
+    pointer-events: none;
   }
 
   transition: all 0.2s ease;

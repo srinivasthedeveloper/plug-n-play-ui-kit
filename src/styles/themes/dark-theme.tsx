@@ -11,14 +11,20 @@ const darkTheme = {
   border:{
     normal: "1px solid #fff",
   },
+  boxShadow: {
+    normal: "0px 6px 8px #fff2",
+  },
   typography: {
     ...commonTheme.typography,
   },
   padding: {
     ...commonTheme.padding,
   },
-  boxShadow: {
-    normal: "0px 6px 8px #fff2",
+  layout:{
+    ...commonTheme.layout
+  },
+  gap:{
+    ...commonTheme.gap
   }
 };
 
