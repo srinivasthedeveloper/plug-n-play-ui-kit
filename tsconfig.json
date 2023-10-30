@@ -31,14 +31,14 @@
 
     "baseUrl": ".",
      "paths": {
-      "plug-n-play-ui-kit": [ "src/index.ts" ]
+      "plug-n-play-ui-kit": [ "src/components/index.ts" ]
     },
     "typeRoots": [
       "node_modules/@types",
       "src/index.d.ts"
     ]
   },
-  "include": ["./packages", "*.d.ts", "src"],
+  "include": ["./packages", "*.d.ts", "src", "stories"],
   "exclude": ["node_modules", "dist"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }
