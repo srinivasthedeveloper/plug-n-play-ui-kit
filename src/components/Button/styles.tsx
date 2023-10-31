@@ -1,30 +1,27 @@
-import styled, { css } from "styled-components";
-import { ButtonStyleProps } from "./types";
+import styled, { css } from 'styled-components'
+import { ButtonStyleProps } from './types'
 
 const SButton = styled.button<ButtonStyleProps>`
   cursor: pointer;
   text-align: center;
   border: none;
   ${({ theme }) => theme.layout.flexCenter};
-  gap: ${({ size = "medium", theme }) => theme.gap[size]};
-  font-weight: ${({ theme, fontWeight = "normal" }) =>
-    theme.typography.weight[fontWeight]};
-  font-size: ${({ theme, fontSize, size = "medium" }) =>
-    theme.typography.size[fontSize ?? size]};
-  font-style: ${({ theme, fontStyle = "normal" }) =>
-    theme.typography.style[fontStyle]};
-  padding: ${({ size = "medium", theme }) => theme.padding[size]};
-  border-radius: ${({ shape = "box" }) => (shape === "oval" ? "500px" : "4px")};
+  gap: ${({ size = 'medium', theme }) => theme.gap[size]};
+  font-weight: ${({ theme, fontWeight = 'normal' }) => theme.typography.weight[fontWeight]};
+  font-size: ${({ theme, fontSize, size = 'medium' }) => theme.typography.size[fontSize ?? size]};
+  font-style: ${({ theme, fontStyle = 'normal' }) => theme.typography.style[fontStyle]};
+  padding: ${({ size = 'medium', theme }) => theme.padding[size]};
+  border-radius: ${({ shape = 'box' }) => (shape === 'oval' ? '500px' : '4px')};
 
   ${({ variant, theme, backgroundColor }) =>
-    variant === "primary" &&
+    variant === 'primary' &&
     css`
       background-color: ${backgroundColor ?? theme.colors.primary};
       color: ${theme.colors.text};
     `}
 
   ${({ variant, theme }) =>
-    variant === "secondary" &&
+    variant === 'secondary' &&
     css`
       background-color: transparent;
       border: ${theme.border.normal};
@@ -32,14 +29,14 @@ const SButton = styled.button<ButtonStyleProps>`
     `}
 
   ${({ variant, theme }) =>
-    variant === "text" &&
+    variant === 'text' &&
     css`
       background-color: transparent;
       color: ${theme.colors.primary};
     `}
 
   ${({ variant, theme }) =>
-    variant === "link" &&
+    variant === 'link' &&
     css`
       background-color: transparent;
       color: ${theme.colors.primary};
@@ -70,6 +67,6 @@ const SButton = styled.button<ButtonStyleProps>`
   }
 
   transition: all 0.2s ease;
-`;
+`
 
-export { SButton };
+export { SButton }

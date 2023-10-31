@@ -1,4 +1,5 @@
 {
+  "version": "0.0.3.8",
   "name": "plug-n-play-ui-kit",
   "description": "Plug-N-Play-Ui-Kit is a design system built with Storybook, Vite, React, TypeScript and styled-components",
   "author": "SrinivasTheDeveloper",
@@ -36,7 +37,6 @@
       "require": "./dist/plug-n-play-ui-kit.umd.js"
     }
   },
-  "version": "0.0.02",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -50,7 +50,10 @@
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "vite-plugin-dts": "^3.6.1"
+    "vite-plugin-dts": "^3.6.1",
+    "babel-plugin-styled-components": "^2.1.4",
+    "storybook": "^7.5.1",
+    "styled-components": "^6.1.0"
   },
   "devDependencies": {
     "@storybook/addon-a11y": "^7.5.1",
@@ -70,7 +73,6 @@
     "@typescript-eslint/eslint-plugin": "^6.9.0",
     "@typescript-eslint/parser": "^6.0.0",
     "@vitejs/plugin-react-swc": "^3.3.2",
-    "babel-plugin-styled-components": "^2.1.4",
     "eslint": "^8.52.0",
     "eslint-config-standard-with-typescript": "^39.1.1",
     "eslint-plugin-import": "^2.29.0",
@@ -83,10 +85,9 @@
     "eslint-plugin-storybook": "^0.6.15",
     "prettier": "^3.0.3",
     "react-hooks": "^1.0.1",
-    "storybook": "^7.5.1",
-    "styled-components": "^6.1.0",
     "typescript": "^5.2.2",
     "vite": "^4.4.5",
+    "vite-plugin-copy": "^0.1.6",
     "vite-plugin-linter": "^2.0.7",
     "vite-tsconfig-paths": "^4.2.1"
   }
