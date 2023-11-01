@@ -73,6 +73,7 @@ export default defineConfig((configEnv) => {
     resolve: {
       alias: {
         'styled-components': 'styled-components',
+        'plug-n-play-ui-kit': 'dist/plug-n-play-ui-kit.es.js',
       },
     },
   };
