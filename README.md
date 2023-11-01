@@ -1,4 +1,3 @@
-```markdown
 # Plug-N-Play-Ui-Kit
 
 [![npm version](https://badge.fury.io/js/plug-n-play-ui-kit.svg)](https://badge.fury.io/js/plug-n-play-ui-kit)
@@ -13,7 +12,7 @@ To get started with Plug-N-Play-Ui-Kit, follow these steps:
 
 You can install the library using npm:
 
-```bash
+```
 npm install plug-n-play-ui-kit
 ```
 
@@ -25,7 +24,7 @@ To avoid theming issues on components, make sure to wrap your entire application
 
 Example:
 
-```jsx
+```
 import React from 'react';
 import { PlugNPlayContainer, darkTheme } from 'plug-n-play-ui-kit';
 import App from './App'; // Replace with your root component
@@ -44,7 +43,7 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
 
 To ensure TypeScript can correctly find the declaration files for Plug-N-Play-Ui-Kit, add the following paths to your `tsconfig.json`:
 
-```json
+```
 {
   "compilerOptions": {
     "baseUrl": ".",
@@ -61,14 +60,15 @@ If you encounter issues like "Could not find a declaration file for module 'plug
 
 - Ensure Vite or your build tool correctly handles TypeScript declaration files and module resolution.
 - Make sure you're using the latest version of Plug-N-Play-Ui-Kit.
+- If you need any assistance kindly create an issue in [Git Issues](https://github.com/srinivasthedeveloper/plug-n-play-ui-kit/issues/new)
 
-## Contributing
+<!-- ## Contributing
 
 We welcome contributions from the community! If you'd like to contribute to this project, please check out our [Contribution Guidelines](CONTRIBUTING.md).
-
+-->
 ## License
 
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License. <!-- See the [LICENSE](LICENSE) file for details. -->
 ```
 
 This README provides clear instructions and guidance for users and potential contributors. Make sure to include the actual code examples and create the corresponding files (like `CONTRIBUTING.md` and `LICENSE`) in your repository to support these sections. This can help attract more users and contributors to your project.
