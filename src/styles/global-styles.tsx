@@ -11,7 +11,7 @@ const GlobalStyles = createGlobalStyle`
     cursor: default;
     pointer-events: none;
   }
-  &:focus{
+  &:focus-visible{
     outline: 2px solid black;
     outline-offset: 4px;
   }

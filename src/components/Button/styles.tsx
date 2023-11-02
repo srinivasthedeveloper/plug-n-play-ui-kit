@@ -48,15 +48,14 @@ const SButton = styled.button<ButtonStyleProps>`
     transform: scale(1.05);
   }
 
-  &:focus {
+  &:focus-visible {
     outline-color: ${({ theme }) => theme.colors.primary};
+    outline-offset: 4px;
   }
+
 
   &:active {
     transform: scale(0.95);
-    &:focus {
-      outline-color: transparent;
-    }
   }
 
   &:disabled {
